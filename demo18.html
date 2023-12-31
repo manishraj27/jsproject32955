@@ -21,8 +21,36 @@
             document.writeln(s+"</br>")
             document.writeln(s.length+"</br>")
             s.pop()
+            s[10]
             document.writeln(s+"</br>")
             document.writeln(s.length+"</br>")
+            document.writeln(s.reverse()+"</br>")
+            document.writeln(s.sort()+"</br>") //s.sort() will change in the physical  array in ascending order
+            document.writeln("Array= "+s+"</br>")
+            let element = s.shift()
+            document.writeln(element+"</br>")
+            document.writeln("After Shifting= "+s+"</br>")
+            let len = s.unshift(100.5)
+            document.writeln(len+"</br>")
+            document.writeln("After Unshifting= "+s+"</br>")
+            let len1 = s.unshift("aws",31,"pfsd")
+            document.writeln(len1+"</br>")
+            document.writeln("After Unshifting= "+s+"</br>")
+            document.writeln("<u>Display Array Elements Using For Loop</u></br>")
+            for(let i=0;i<s.length;i++)
+            {
+                document.writeln(s[i]+"</br>")
+            }
+            document.writeln("<u>Display Array Elements Using for in Loop</u></br>")
+            for(let i in s)
+            {
+                document.writeln(s[i]+"</br>")
+            }
+            document.writeln("<u>Display Array Elements Using for of Loop</u></br>")
+            for(let element of s)
+            {
+                document.writeln(element+"</br>")
+            }
         </script>
     </head>
 
